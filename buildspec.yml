@@ -3,7 +3,8 @@ version: 0.1
 phase:
   build:
     commands:
-      - echo Nothing to do
+      - npm install
+      - npm run webpack
 
 artifacts:
   files:
@@ -12,3 +13,4 @@ artifacts:
     - images/*
     - styles/*
     - scripts/*
+    - dist/bundle.js
